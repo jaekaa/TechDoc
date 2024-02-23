@@ -2,9 +2,35 @@ html, body {
   min-width: 290px;
   color: #182d2e;
   background-color: #fff;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   line-height: 1.5;
 }
+
+/* Main */
+
+header {
+  color: #f8f8f8;
+  margin: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder; /* Making the font slightly bold */
+}
+
+
+#main-doc header {
+  color: #182d2e;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+#main-doc {
+  margin-left: 310px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+/* Navigation */
 
 #navbar {
   position: fixed;
@@ -14,19 +40,6 @@ html, body {
   width: 300px;
   height: 100%;
   background-color: #193146;
-}
-
-header {
-  color: #f8f8f8;
-  margin: 10px;
-  text-align: center;
-  font-size: 2em;
-}
-
-#main-doc header {
-  color: #182d2e;
-  text-align: left;
-  margin: 0 0 20px 0;
 }
 
 #navbar ul {
@@ -51,21 +64,20 @@ a {
   padding: 10px 30px;
   color: #dfdfdf;
   cursor: pointer;
+  position: relative;
 }
 
 #navbar a:hover {
-  display: block;
-  padding: 10px 30px;
   color: #f8f8f8;
-  text-decoration: none;
-  cursor: pointer;
+  text-decoration: underline; /* Underline effect on hover */
 }
 
-#main-doc {
-  margin-left: 310px;
-  padding: 40px;
-  margin-bottom: 50px;
+#navbar a.active {
+  color: #f8f8f8;
+  text-decoration: underline; /* Underline effect on active */
 }
+
+/* Section */
 
 section article {
   font-size: 1.2em;
